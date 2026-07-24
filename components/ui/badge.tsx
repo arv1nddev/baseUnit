@@ -14,9 +14,9 @@ const variantStyles: Record<BadgeVariant, string> = {
   primary:
     'bg-[var(--color-primary-light)] text-[var(--color-primary)]',
   ingredient:
-    'bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
+    'bg-slate-100 text-slate-800 dark:bg-zinc-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-700',
   subrecipe:
-    'bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300',
+    'bg-slate-200 text-slate-900 dark:bg-zinc-700 dark:text-zinc-100 border border-slate-300 dark:border-zinc-600',
   cost:
     'bg-[var(--color-cost-bg)] text-[var(--color-cost-text)]',
 };

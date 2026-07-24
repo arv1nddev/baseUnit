@@ -62,7 +62,11 @@ export function Select({
             </option>
           ))}
           {groups?.map((group) => (
-            <optgroup key={group.label} label={group.label}>
+            <optgroup 
+              key={group.label} 
+              label={group.label} 
+              className="font-bold text-xs uppercase text-[var(--text-tertiary)] bg-[var(--bg-surface-hover)] p-1 mt-1"
+            >
               {group.options.map((opt) => (
                 <option key={opt.value} value={opt.value}>
                   {opt.label}

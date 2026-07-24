@@ -379,7 +379,7 @@ export default function RecipeBuilderPage() {
               onClick={() => { setAddType('sub_recipe'); setAddItemId(''); setAddUom(''); }}
               className={`flex-1 py-2 px-3 text-sm font-medium rounded-[var(--radius-md)] border transition-colors cursor-pointer
                 ${addType === 'sub_recipe'
-                  ? 'bg-purple-50 text-purple-700 border-purple-400 dark:bg-purple-950 dark:text-purple-300 dark:border-purple-600'
+                  ? 'bg-slate-100 text-slate-900 border-slate-400 dark:bg-zinc-800 dark:text-zinc-100 dark:border-zinc-500'
                   : 'bg-[var(--bg-surface)] text-[var(--text-secondary)] border-[var(--border-default)] hover:bg-[var(--bg-surface-hover)]'
                 }
               `}

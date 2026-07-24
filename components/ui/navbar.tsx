@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export function Navbar() {
   const pathname = usePathname();
@@ -24,7 +25,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-40 bg-[var(--bg-surface)]/80 backdrop-blur-xl border-b border-[var(--border-default)]">
+    <nav className="sticky top-0 z-40 bg-white/60 dark:bg-zinc-900/50 backdrop-blur-md border-b border-gray-200/50 dark:border-white/10 shadow-sm dark:shadow-none transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
@@ -33,7 +34,7 @@ export function Navbar() {
             className="flex items-center gap-2 font-bold text-lg text-[var(--text-primary)] tracking-tight"
           >
             <div className="w-7 h-7 rounded-lg bg-[var(--color-primary)] flex items-center justify-center">
-              <span className="text-white text-xs font-black">b</span>
+              <span className="text-[var(--text-inverse)] text-xs font-black">b</span>
             </div>
             baseUnit
           </Link>
@@ -63,6 +64,7 @@ export function Navbar() {
 
           {/* Right side */}
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             <button
               onClick={handleSignOut}
               disabled={signingOut}

@@ -11,9 +11,9 @@ export function Card({ children, className = '', hover = false, onClick }: CardP
   return (
     <div
       className={`
-        bg-[var(--bg-surface)] rounded-[var(--radius-lg)] border border-[var(--border-default)]
+        bg-[var(--bg-elevated)] backdrop-blur-md rounded-[var(--radius-xl)] border border-[var(--border-default)]
         shadow-[var(--shadow-sm)] transition-all duration-[var(--transition-normal)]
-        ${hover ? 'hover:shadow-[var(--shadow-md)] hover:border-[var(--border-strong)] cursor-pointer' : ''}
+        ${hover ? 'hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 hover:border-[var(--border-strong)] cursor-pointer' : ''}
         ${onClick ? 'cursor-pointer' : ''}
         ${className}
       `}

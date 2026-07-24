@@ -19,7 +19,7 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
           <div className="w-12 h-12 rounded-2xl bg-[var(--color-primary)] flex items-center justify-center mb-4 shadow-[var(--shadow-md)]">
-            <span className="text-white text-xl font-black">b</span>
+            <span className="text-[var(--text-inverse)] text-xl font-black">b</span>
           </div>
           <h1 className="text-2xl font-bold text-[var(--text-primary)] tracking-tight">
             Welcome to baseUnit

@@ -36,7 +36,7 @@ export function CostDisplay({
       )}
       <span
         className={`
-          font-bold tabular-nums tracking-tight
+          font-serif font-bold tabular-nums tracking-tight
           text-[var(--color-cost)]
           ${sizeStyles[size]}
         `}

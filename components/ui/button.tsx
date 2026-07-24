@@ -12,13 +12,13 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    'bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-hover)] shadow-[var(--shadow-sm)]',
+    'bg-[var(--color-primary)] text-[var(--text-inverse)] hover:bg-[var(--color-primary-hover)] shadow-[var(--shadow-md)] hover:shadow-[var(--shadow-glow)] hover:-translate-y-0.5',
   secondary:
-    'bg-[var(--bg-surface)] text-[var(--text-primary)] border border-[var(--border-default)] hover:bg-[var(--bg-surface-hover)] shadow-[var(--shadow-sm)]',
+    'bg-[var(--bg-surface)] text-[var(--text-primary)] border border-[var(--border-default)] hover:bg-[var(--bg-surface-hover)] shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5',
   danger:
-    'bg-[var(--color-danger)] text-white hover:bg-[var(--color-danger-hover)]',
+    'bg-[var(--color-danger)] text-white hover:bg-[var(--color-danger-hover)] hover:shadow-lg hover:-translate-y-0.5',
   ghost:
-    'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-hover)]',
+    'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-hover)] hover:-translate-y-0.5',
 };
 
 const sizeStyles: Record<ButtonSize, string> = {
